@@ -1,0 +1,217 @@
+:root {
+  --main-color: #afe5ef;
+  --second-color: #2fb2c5;
+  --hover-color: #2a5a9e;
+  --bronze-color:#cd7f32;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(45deg, #afe5ef, #2fb2c5, #2a5a9e);
+}
+
+button {
+  border: 2px solid var(--second-color);
+  background-color: inherit;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--second-color);
+  color: #eee;
+}
+
+button:hover i {
+  color: #eee;
+}
+
+i {
+  color: var(--second-color);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Roboto Slab", serif;
+}
+
+.container,
+.small-container {
+  width: 60%;
+  min-height: 65%;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  padding: 4rem;
+}
+
+.small-container {
+  width: 50%;
+  min-height: 50%;
+}
+
+.container .progress-bar {
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.container .progress-bar .progress-bar-inner {
+  height: 10px;
+  width: 0%;
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+
+.container .question div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .question .word {
+  text-align: center;
+  color: var(--second-color);
+  font-size: 5rem;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.container .choices {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container .choices .choice {
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 2px solid #eee;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.container .choices .choice i {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.container .choices .choice:hover {
+  border: 2px solid var(--hover-color);
+}
+
+.container .choices .choice:hover i {
+  color: var(--hover-color);
+}
+
+.container .progress-bar,
+.container .question,
+.container .choices {
+  width: 100%;
+}
+
+.container .question .word,
+.container .progress-bar {
+  margin: 30px 0;
+}
+
+/* Rank Screen */
+.app .rank {
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: bold;
+}
+.rank .score-result {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rank .score-result i,
+.rank .score-result p,
+.rank .quote {
+  font-size: 1.8rem;
+}
+
+
+/* start Screen */
+.app .start {
+  flex-direction: column;
+}
+
+.app .start > h1 {
+  margin: 10px 0;
+}
+
+/* Not Found Screen */
+.not-found {
+  justify-content: space-between;
+}
+
+.not-found div {
+  font-size: 2rem;
+}
+
+.not-found div p {
+  padding: 20px 0;
+}
+
+.not-found img {
+  width: 70%;
+}
+
+@media screen and (max-width: 670px) {
+  html {
+    font-size: 48%;
+  }
+
+  .container .choices {
+    justify-content: center;
+  }
+
+  .container .choices .choice {
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+  }
+  .small-container {
+    width: 70%;
+  }
+  .not-found {
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    width: 80%;
+    min-height: 50%;
+  }
+
+  .container .choices .choice {
+    width: 80px;
+    height: 80px;
+  }
+}
