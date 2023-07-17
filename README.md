@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <h1 align="center">Part of Speech Quiz App</h1>
-  <img src="./images/parts-of-speech.png" style="width:200px">
+  <img src="./images/parts-of-speech.png" style="width:250px">
 </div>
 
 <details>
@@ -66,7 +66,7 @@ To get a local copy up and running follow these simple example steps.
    ```
 
 
-2. cd ./backend then Add .env file, I've added it feel free to edit the port Number.
+2. cd ./backend then Add .env file, I've added it feel free to edit the port number.
    ```js
    PORT=5000
    ```
@@ -76,7 +76,7 @@ To get a local copy up and running follow these simple example steps.
    npm run dev  
    ``` 
 
-4. cd ./frontend then Add .env file, I've added it feel free to edit the port Number.
+4. cd ./frontend then Add .env file, I've added it feel free to edit the port number.
    ```js
    REACT_APP_BASE_URL="http://localhost:5000"
    ```
