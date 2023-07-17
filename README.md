@@ -1,8 +1,8 @@
 
 <br />
 <div align="center">
-  <img src="./images/parts-of-speech.png" style="width:100px">
-  <h3 align="center">Part of Speech Quiz App</h3>
+  <h1 align="center">Part of Speech Quiz App</h1>
+  <img src="./images/parts-of-speech.png" style="width:200px">
 </div>
 
 <details>
@@ -66,7 +66,7 @@ To get a local copy up and running follow these simple example steps.
    ```
 
 
-2. cd ./backend then Add .env file
+2. cd ./backend then Add .env file, I've added it feel free to edit the port Number.
    ```js
    PORT=5000
    ```
@@ -76,7 +76,7 @@ To get a local copy up and running follow these simple example steps.
    npm run dev  
    ``` 
 
-4. cd ./frontend then Add .env file
+4. cd ./frontend then Add .env file, I've added it feel free to edit the port Number.
    ```js
    REACT_APP_BASE_URL="http://localhost:5000"
    ```
@@ -173,8 +173,10 @@ As A full- stack I prefer Backend-first Approach because In this approach I can 
 - Start Page
     - Has a start button to start practing.
 - Add features to Pratice page
+    - Question ,Word, and Choics.
     - Timer to switch to the next question.
-    - Prograss Bar  
+    - Prograss Bar
+    - when user answer the question ,he has 3 secs to the next question.
 - Add Not Found Page
 - Handle Errors and Exceptions
 
